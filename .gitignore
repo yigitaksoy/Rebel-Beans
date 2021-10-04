@@ -2,8 +2,8 @@
 *.pyc
 __pycache__
 venv
-env.py
 .DS_Store
 .idea
 .vscode
 env
+.env
