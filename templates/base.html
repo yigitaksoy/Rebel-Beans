@@ -21,7 +21,8 @@
     {% endblock %}
     
     {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     {% endblock %}
@@ -33,8 +34,84 @@
     
   </head>
   <body>
-      
-    <header class="container-fluid fixed-top"></header>
+    <header class="fixed-top">
+        <div class="navigation-wrap bg-light start-header start-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-md navbar-light">
+                            <!-- Logo -->
+                            <a class="navbar-brand" href="{% url 'home' %}" alt="logo">Rebel Beans</a>
+                            <!-- Nav Toggler -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <!-- Nav Links -->
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                        <a class="nav-link" aria-label="Home" href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" aria-label="Shop" href="#">Shop</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" aria-label="About" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" aria-label="Blog" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                        <a class="nav-link" aria-label="Contact" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+                                    <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                                        <!-- My Account -->
+                                        <li class="list-inline-item dropdown">
+                                            <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="text-center">
+                                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                                    <p class="my-0">My Account</p>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                                {% if request.user.is_authenticated %}
+                                                    {% if request.user.is_superuser %}
+                                                        <a href="" class="dropdown-item">Product Management</a>
+                                                    {% endif %}
+                                                        <a href="" class="dropdown-item">My Profile</a>
+                                                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                                {% else %}
+                                                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                                {% endif %}
+                                            </div>
+                                        </li>
+                                        <!-- Shopping Bag -->
+                                        <li class="list-inline-item">
+                                            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
+                                                <div class="text-center">
+                                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                                    <p class="my-0">
+                                                        {% if grand_total %}
+                                                            €{{ grand_total|floatformat:2 }}
+                                                        {% else %}
+                                                            €0.00
+                                                        {% endif %}
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>      
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </header>
 
     {% if messages %}
         <div class="message-container"></div>
