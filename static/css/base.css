@@ -1,3 +1,7 @@
+/* Adobe Fonts */
+
+@import url("https://use.typekit.net/jek3hmd.css");
+
 /* Global Settings */
 
 body {
@@ -5,6 +9,8 @@ body {
     padding: 0;
     max-width: 100%;
     height: 100%;
+	font-family: termina, sans-serif;
+	font-style: normal;
     overflow-x: hidden;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,44 +19,24 @@ body {
   
 /* from Bulma */
 .icon {
-    align-items: center;
+	align-items: center;
     display: inline-flex;
-    justify-content: center;
+	justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
 
+.bg-light {
+	background-color: #fff !important;
+    transition: all 200ms linear;
+}
+
+#delivery-banner h4 {
+	font-size: 1rem;
+}
+
 /*      Navigation */
 
-.start-header {
-	opacity: 1;
-	transform: translateY(0);
-	padding: 20px 0;
-	box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-
-.start-header.scroll-on {
-	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-	padding: 10px 0;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-
-.start-header.scroll-on .navbar-brand img{
-	height: 24px;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
-
-.navigation-wrap{
-	width: 100%;
-	top: 0;
-	left: 0;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
-}
 
 .navbar{
 	padding: 0;
@@ -60,7 +46,6 @@ body {
 	height: 28px;
 	width: auto;
 	display: block;
-    filter: brightness(10%);
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
@@ -160,17 +145,149 @@ body {
     transition: all 200ms linear;
 }
 
-.bg-light {
-	background-color: #fff !important;
+.nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+	max-height: 0;
+    display: block;
+	padding: 0;
+	margin: 0;
     transition: all 200ms linear;
 }
 
-@media only screen and (max-width: 768px) {
-    .m-hide {
-        display: none;
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+	max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+
+.dropdown-menu {
+	padding: 10px!important;
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #212121;
+	background-color: #fcfaff;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item {
+	padding: 3px 15px;
+	color: #212121;
+	border-radius: 2px;
+    transition: all 200ms linear;
+}
+
+.dropdown-item:hover, 
+.dropdown-item:focus {
+	color: #fff;
+	background-color: rgba(129,103,169,.6);
+}
+
+@media (max-width: 768px) { 
+
+	#main-nav ul {
+		margin-bottom: 0!important;
+	}
+	
+	.nav-item:after{
+		display: none;
+	}
+	
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0;
+		width: 11px;
+		height: 1px;
+		content: "";
+		border: none;
+		background-color: #000;
+	}
+	
+	.dropdown-toggle::after {
+		position: absolute;
+		display: block;
+		top: 10px;
+		left: -23px;
+		width: 1px;
+		height: 11px;
+		content: "";
+		border: none;
+		background-color: #000;
+		transition: all 200ms linear;
+	}
+	
+	.dropdown-toggle[aria-expanded="true"]::after{
+		transform: rotate(90deg);
+		opacity: 0;
+	}
+	
+	.dropdown-menu {
+		padding: 0 !important;
+		background-color: transparent;
+		box-shadow: none;
+		transition: all 200ms linear;
+		z-index: 1030;
+	}
+	
+	.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
+		margin-top: 10px !important;
+		margin-bottom: 20px !important;
+	}
+	
+	.nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
     }
 }
 
-#delivery-banner p {
-    margin-bottom: 0!important;
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .8rem;
+    }
+ 
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
+    }
+	
 }
