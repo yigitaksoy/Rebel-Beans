@@ -6,8 +6,8 @@
         <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 mr-5">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Cold Brew Coffee</a>
-                <a class="dropdown-item" href="#">Fresh Coffee Beans</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=cold_brew_coffee">Cold Brew Coffee</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=fresh_coffee_beans">Fresh Coffee Beans</a>
                 <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
             </div>
         </li>
