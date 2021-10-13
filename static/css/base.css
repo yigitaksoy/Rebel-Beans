@@ -35,6 +35,45 @@ p {
 	color: var(--font-color) !important
 }
 
+.btn-black {
+    background: var(--font-color);
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: var(--font-color) !important;
+    border: 1px solid var(--font-color);
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: var(--font-color);
+    color: white !important;
+}
+
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: var(--font-color);
+    color: white;
+}
+
+.border-black {
+    border: 1px solid var(--font-color) !important;
+}
+
+.bg-black {
+    background: var(--font-color) !important;
+}
+
+a.category-badge > span.badge:hover {
+    background: var(--font-color) !important;
+    color: #fff !important;
+}
+
 /* from Bulma */
 .icon {
 	align-items: center;
