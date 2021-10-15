@@ -6,6 +6,10 @@
 
 :root {
 	--font-color: #121212;
+	--nav-bg: #151719;
+	--nav-links: #eceded;
+	--bg-purple: #8787C2;
+	--bg-yellow: #FEB00F;
 }
 
 body {
@@ -79,6 +83,10 @@ a.category-badge > span.badge:hover {
 	cursor: pointer;
 }
 
+.custom-bg a {
+	background: var(--nav-bg);
+}
+
 /* from Bulma */
 .icon {
 	align-items: center;
@@ -95,6 +103,7 @@ a.category-badge > span.badge:hover {
 
 #delivery-banner h4 {
 	font-size: 1rem;
+	font-weight: 900;
 }
 
 /* Bootstrap Toasts */
@@ -168,6 +177,10 @@ a.category-badge > span.badge:hover {
 
 /*      Navigation */
 
+nav {
+	background: var(--nav-bg);
+	color: var(--nav-links);
+}
 
 .navbar{
 	padding: 0;
@@ -192,21 +205,31 @@ a.category-badge > span.badge:hover {
 	outline: none;
 }
 
-.navbar-light .navbar-toggler-icon {
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+	outline: none;
+}
+
+.nav-link:active,
+.nav-link:focus {
+	outline: none;
+}
+
+nav .navbar-toggler-icon {
 	width: 24px;
 	height: 17px;
 	background-image: none;
 	position: relative;
-	border-bottom: 1px solid var(--font-color);
+	border-bottom: 1px solid var(--nav-links);
     transition: all 300ms linear;
 }
 
-.navbar-light .navbar-toggler-icon:after, 
-.navbar-light .navbar-toggler-icon:before{
+nav .navbar-toggler-icon:after, 
+nav .navbar-toggler-icon:before{
 	width: 24px;
 	position: absolute;
 	height: 1px;
-	background-color: var(--font-color);
+	background-color: var(--nav-links);
 	top: 0;
 	left: 0;
 	content: '';
@@ -214,7 +237,7 @@ a.category-badge > span.badge:hover {
     transition: all 300ms linear;
 }
 
-.navbar-light .navbar-toggler-icon:after{
+nav .navbar-toggler-icon:after{
 	top: 8px;
 }
 
@@ -230,18 +253,40 @@ a.category-badge > span.badge:hover {
 	border-color: transparent;
 }
 
+#delivery-banner {
+	color: var(--nav-links);
+	margin-bottom: 5rem;
+}
+
+.banner-col {
+	background: var(--bg-purple);
+}
+
+.highlight {
+	background: url('/media/brush-stroke.png');
+	background-repeat: no-repeat;
+	background-size: 100% 90%;
+	padding: 6px 60px;
+}
+
+#topnav {
+	background: var(--nav-bg)!important;
+	color: var(--nav-links) !important;
+}
+
 .nav-link{
-	color: var(--font-color) !important;
+	color: var(--nav-links) !important;
+	background: var(--nav-bg)!important;
 	font-weight: 500;
     transition: all 200ms linear;
 }
 
-.nav-item:hover .nav-link{
-	color: #8167a9 !important;
+.cart-item {
+	color: var(--bg-yellow)!important;
 }
 
-.nav-item.active .nav-link{
-	color: #777 !important;
+.nav-item:hover .nav-link{
+	color: #8167a9 !important;
 }
 
 .nav-link {
@@ -300,7 +345,7 @@ a.category-badge > span.badge:hover {
 	font-size: 13px;
 	letter-spacing: 1px;
 	color: var(--font-color);
-	background-color: #fcfaff;
+	background-color: var(--nav-links);
 	border: none;
 	border-radius: 3px;
 	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
@@ -313,7 +358,7 @@ a.category-badge > span.badge:hover {
 
 .dropdown-item {
 	padding: 3px 15px;
-	color: #212121;
+	color: var(--nav-bg);
 	border-radius: 2px;
     transition: all 200ms linear;
 }
@@ -381,6 +426,10 @@ a.category-badge > span.badge:hover {
 		margin-bottom: 20px !important;
 	}
 	
+	.dropdown-item {
+		color: var(--nav-links)!important;
+	}
+	
 	.nav-link {
         padding: 0.15rem;
     }
@@ -388,6 +437,11 @@ a.category-badge > span.badge:hover {
     .nav-link i.fa-lg {
         font-size: 1rem;
     }
+	
+	.highlight { 
+		background-size: 100% 90%;
+		padding: 6px 30px;
+	}
 }
 
 @media (min-width: 992px) {
