@@ -392,7 +392,7 @@ nav .navbar-toggler-icon:after{
 		height: 1px;
 		content: "";
 		border: none;
-		background-color: var(--font-color);
+		background-color: var(--nav-links);
 	}
 	
 	.dropdown-toggle::after {
@@ -404,7 +404,7 @@ nav .navbar-toggler-icon:after{
 		height: 11px;
 		content: "";
 		border: none;
-		background-color: var(--font-color);
+		background-color: var(--nav-links);
 		transition: all 200ms linear;
 	}
 	
