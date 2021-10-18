@@ -106,6 +106,16 @@ a.category-badge > span.badge:hover {
 	font-weight: 900;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* Bootstrap Toasts */
 
 .message-container {
