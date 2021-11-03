@@ -604,3 +604,30 @@ nav .navbar-toggler-icon:after{
 	background: white;
 	z-index: -1;
 }
+
+/*		Footer */
+
+.footer {
+	background: var(--nav-bg);
+	color: var(--nav-links);
+}
+
+.copyright span {
+	font-family: cortado, sans-serif;
+	font-weight: 400;
+	font-size: 1.25rem;
+}
+
+.footer h6 {
+	font-size: .8rem;
+	color: var(--bg-purple)!important;
+	font-weight: 700;
+}
+
+.footer a {
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: var(--bg-purple)!important;
+}
