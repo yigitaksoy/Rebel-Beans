@@ -608,6 +608,7 @@ nav .navbar-toggler-icon:after{
 /*		Footer */
 
 .footer {
+	margin-top: 3rem!important;
 	background: var(--nav-bg);
 	color: var(--nav-links);
 }
