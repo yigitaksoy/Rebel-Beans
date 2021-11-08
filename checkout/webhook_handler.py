@@ -100,7 +100,8 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=(f'Webhook received: {event["type"]} | SUCCESS: '
+                         'Verified order already in database'),
                 status=200)
         else:
             order = None
@@ -129,7 +130,7 @@ class StripeWH_Handler:
                         )
                         order_line_item.save()
                     else:
-                        for grind, quantity in item_data['items_by_size'].items():
+                        for grind, quantity in item_data['items_by_grind'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
