@@ -11,7 +11,7 @@
 
 {% block content %}
 <section id="contact">
-    <h2 class="text-center py-3">Get in touch</h2>
+    <h2 class="text-center">Get in touch</h2>
     <div class="container-fluid contact-container">
         <div class="container-fluid mb-4">
             <p class="text-center text-muted">
@@ -24,7 +24,12 @@
                         {{ field | as_crispy_field }}
                     {% endfor %}
                     <div class="text-center">
-                        <button class="btn btn-black rounded-0 text-uppercase" type="submit">Send</button>
+                        <button class="btn btn-lg btn-secondary rounded-0 text-uppercase" type="submit">
+                            <span>Send</span>
+                            <span class="icon">
+                                <i class="far fa-envelope"></i>
+                            </span>
+                        </button>
                     </div>
                 </form>
             </div>
