@@ -741,6 +741,18 @@ nav .navbar-toggler-icon:after{
 	
 }
 
+.page-link {
+	background-color: var(--bg-yellow)!important;
+	font-weight: 900;
+	color: var(--font-color);
+}
+
+.page-link:hover{
+	background-color: var(--font-color)!important;
+	text-decoration: none;
+	color: var(--bg-yellow);
+}
+
 
 @media screen and (max-width: 1024px) {
     .post-img-container {
