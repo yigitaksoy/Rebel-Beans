@@ -716,9 +716,14 @@ nav .navbar-toggler-icon:after{
 
 #blog-post-container h2 {
     margin: 2rem 0;
-    font-size: 3.5rem; 
+    font-size: 3rem; 
 }
-  
+
+#blog-post-container h4 {
+	color: var(--font-color);
+	font-weight: 900;
+	border-bottom: 3px solid var(--bg-purple);
+}
   
 .post-page-content {
     margin-top: 2rem;
@@ -748,6 +753,19 @@ nav .navbar-toggler-icon:after{
 }
 
 .page-link:hover{
+	background-color: var(--font-color)!important;
+	text-decoration: none;
+	color: var(--bg-yellow);
+}
+
+.btn-secondary {
+	background-color: var(--bg-yellow)!important;
+	font-weight: 900;
+	color: var(--font-color);
+	border:none;
+}
+
+.btn-secondary:hover{
 	background-color: var(--font-color)!important;
 	text-decoration: none;
 	color: var(--bg-yellow);
