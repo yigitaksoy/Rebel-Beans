@@ -8,7 +8,7 @@
 	--font-color: #121212;
 	--nav-bg: #151719;
 	--nav-links: #eceded;
-	--bg-purple: #8787C2;
+	--bg-purple: #8167a9;
 	--bg-yellow: #FEB00F;
 }
 
@@ -102,7 +102,7 @@ a.category-badge > span.badge:hover {
 }
 
 #delivery-banner h4 {
-	font-size: 1rem;
+	font-size: .8rem;
 	font-weight: 900;
 }
 
@@ -272,9 +272,6 @@ nav .navbar-toggler-icon:after{
 	margin-bottom: 5rem;
 }
 
-.banner-col {
-	background: var(--bg-purple);
-}
 
 .highlight {
 	background: url('/media/brush-stroke.png');
@@ -288,7 +285,7 @@ nav .navbar-toggler-icon:after{
 	color: var(--nav-links) !important;
 }
 
-.nav-link{
+.nav-link {
 	color: var(--nav-links) !important;
 	background: var(--nav-bg)!important;
 	font-weight: 500;
@@ -304,6 +301,7 @@ nav .navbar-toggler-icon:after{
 }
 
 .nav-link {
+	font-size: .9rem;
 	position: relative;
 	padding: 5px 0 !important;
 	display: inline-block;
