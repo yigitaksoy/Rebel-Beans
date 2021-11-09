@@ -204,12 +204,16 @@ nav {
 	padding: 0;
 }
 
-.navbar-brand img{
-	height: 28px;
-	width: auto;
-	display: block;
-	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
+.logo {
+	padding-top: .5rem!important;
+}
+
+.logo a {
+	padding-top: 1rem;
+	font-size: 2rem;
+	font-family: cortado, sans-serif;
+	text-decoration: none;
+	color: var(--nav-links)!important;
 }
 
 .navbar-toggler {
