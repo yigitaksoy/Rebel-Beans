@@ -44,10 +44,10 @@ def contact(request):
         else:
             messages.error(request, 'Oops! Something went wrong with your form!')
     else:
-        form = ContactForm()
+        contact_form = ContactForm()
 
     context = {
-        'form': form,
+        'contact_form': contact_form,
     }
     template = 'contact/contact.html'
     return render(request, template, context)
