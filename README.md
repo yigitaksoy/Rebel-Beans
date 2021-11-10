@@ -172,13 +172,16 @@ Testing information can be found in seperate [TESTING.md](https://github.com/yig
 ## Credits
 
 ### Content
-
+- All the content including product images, and product descriptions were taken from [Rebel Beans](https://rebelbeans.com/) with their consent. 
 
 ### Media
  
 
 ### Codes
-
+- All the code that was used to build the home, bag, checkout, products, profile apps, as well as setting up Stripe Payments, and parts of the CSS has been taken from the Boutique Ado Walkthrough Project by the Code Institute, with minor modifications.
+- Backend code for creating the [Blog application](https://djangocentral.com/building-a-blog-application-with-django/), [Comments](https://djangocentral.com/creating-comments-system-with-django/), and [Pagination](https://djangocentral.com/adding-pagination-with-django/) has been taken from the [Django Central](https://djangocentral.com/)
+- Code for the Blog and Blog Post templates and styles were taken from my [Wonderdam Milestone Project](https://github.com/yigitaksoy/Wonderdam).
+- Code for the Responsove Bootstrap Navigation was taken from [Codepen](https://codepen.io/ig_design/pen/omQXoQ)
 
 
 ## Acknowledgements
