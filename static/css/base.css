@@ -497,7 +497,18 @@ nav .navbar-toggler-icon:after{
     #delivery-banner h4 {
         font-size: .8rem;
     }
- 
+    
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-md,
+    .btn.btn-black.rounded-0.btn-md {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
@@ -645,7 +656,7 @@ nav .navbar-toggler-icon:after{
   
 .post .info {
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .7rem;
 
 }
   
