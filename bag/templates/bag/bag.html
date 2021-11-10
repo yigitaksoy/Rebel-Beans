@@ -123,13 +123,15 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class=" text-center mb-5">Your shopping cart is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <div class="text-center mt-5">
+                    <p class=" text-center mb-5">Your shopping bag is empty.</p>
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-sm mt-5 mb-5">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
+                </div>
                 {% endif %}
             </div>
         </div>
