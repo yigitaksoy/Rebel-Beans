@@ -41,6 +41,8 @@ p {
 	color: var(--font-color) !important
 }
 
+/*  Code Credit: Code Institute Boutique Ado Project  */
+
 .btn-black {
     background: var(--font-color);
     color: white;
@@ -124,6 +126,8 @@ input[name='q']::placeholder {
 
 /* Bootstrap Toasts */
 
+/*  Code Credit: Code Institute Boutique Ado Project  */
+
 .message-container {
     position: fixed;
     top: 72px;
@@ -143,17 +147,6 @@ input[name='q']::placeholder {
 	font-size: .7rem;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
-.arrow-up {
-    width: 0; 
-    height: 0; 
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 36px;
-}
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
@@ -196,6 +189,8 @@ input[name='q']::placeholder {
 
 
 /*      Navigation */
+
+/*  Code Credit: https://codepen.io/ig_design/pen/omQXoQ  */
 
 nav {
 	background: var(--nav-bg);
@@ -515,61 +510,39 @@ nav .navbar-toggler-icon:after{
 	
 }
 
-/* Allauth form formatting */
+/* 		Homepage */
 
-.allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+.jumbotron {
+	margin: 0;
+	background: url('/media/home-background.jpg') no-repeat center center;
+    min-height: 95vh;
+    background-size:cover;
 }
 
-.allauth-form-inner-content input {
-    border-color: #000;
-    border-radius: 0;
+@media (max-width: 414px) {
+	.jumbotron {
+		min-height: 90vh;
+	}
 }
 
-.allauth-form-inner-content label:not([for='id_remember']) {
-    display: none;
+/* 		Products Page */
+
+/*  Code Credit: Code Institute Boutique Ado Project  */
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: var(--bg-off-white);
+	z-index: -1;
 }
 
-.allauth-form-inner-content input::placeholder {
-    color: #aab7c4;
-}
-
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
-}
 
 /* Product Form */
+
+/*  Code Credit: Code Institute Boutique Ado Project  */
 
 .btn-file {
     position: relative;
@@ -597,36 +570,12 @@ nav .navbar-toggler-icon:after{
     border-radius: 0;
 }
 
-/* 		Homepage */
-
-.jumbotron {
-	margin: 0;
-	background: url('/media/home-background.jpg') no-repeat center center;
-    min-height: 95vh;
-    background-size:cover;
-}
-
-@media (max-width: 414px) {
-	.jumbotron {
-		min-height: 90vh;
-	}
-}
-
-
-/* 		Products Page */
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: var(--bg-off-white);
-	z-index: -1;
-}
 
 
 /*      Blog Page */
+
+/*  Code Credit: https://github.com/yigitaksoy/Wonderdam    */
+
 
 .post-img {
     height: 50vh;
@@ -736,6 +685,8 @@ nav .navbar-toggler-icon:after{
 
 /* Blog Post Page */
 
+/*  Code Credit: https://github.com/yigitaksoy/Wonderdam    */
+
 #blog-post-container h2 {
     margin: 2rem 0;
     font-size: 3rem; 
@@ -839,7 +790,65 @@ nav .navbar-toggler-icon:after{
     }
 }
 
+/* Allauth form formatting */
+
+/*  Code Credit: Code Institute Boutique Ado Project  */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
 /*		Footer */
+
+/*  Code Credit: https://mdbootstrap.com/docs/standard/navigation/footer/  */
 
 .footer {
 	margin-top: 3rem!important;
