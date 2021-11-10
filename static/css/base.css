@@ -10,6 +10,7 @@
 	--nav-links: #eceded;
 	--bg-purple: #8167a9;
 	--bg-yellow: #FEB00F;
+	--bg-off-white: #f7f1e3;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 	font-family: termina, sans-serif;
     overflow-x: hidden;
 	color: var(--font-color);
+	background: var(--bg-off-white);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
@@ -278,6 +280,7 @@ nav .navbar-toggler-icon:after{
 #delivery-banner {
 	color: var(--nav-links);
 	margin-bottom: 5rem;
+	background: var(--bg-yellow);
 }
 
 
@@ -607,7 +610,7 @@ nav .navbar-toggler-icon:after{
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: var(--bg-off-white);
 	z-index: -1;
 }
 
