@@ -1,0 +1,1 @@
+web: gunicorn rebel_beans.wsgi:application
