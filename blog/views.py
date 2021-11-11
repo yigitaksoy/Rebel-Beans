@@ -5,7 +5,13 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def posts(request):
-    """ A view for the blog page """
+    """ 
+    A view for the blog page
+        Args:
+            request
+        Returns:
+            renders blog page template   
+    """
     
     posts = Post.objects.filter(status=1).order_by('-created_on')
     paginator = Paginator(posts, 4)  # Maximum 4 posts on each page
@@ -28,7 +34,10 @@ def posts(request):
 
 
 def post_detail(request, slug):
-    """ A view for each blog post """
+    """ 
+    A view for each blog post, and allows
+    users to add comments.
+    """
 
     template_name = 'blog/post_detail.html'
     post = get_object_or_404(Post, slug=slug)
@@ -44,7 +53,6 @@ def post_detail(request, slug):
             new_comment.post = post
             # Save the comment to the database
             new_comment.save()
-
     else:
         comment_form = CommentForm()
 
