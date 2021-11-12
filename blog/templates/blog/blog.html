@@ -42,7 +42,7 @@
                         <a class="text-reset" href="{% url 'post_detail' post.slug %}">
                             <h2>{{ post.title }}</h2>
                         </a>
-                        <p>{{ post.content|truncatechars:180 }}</p>
+                        <p class="intro">{{ post.content|truncatechars:180 }}</p>
                         <div class="py-5">
                            <a href="{% url 'post_detail' post.slug %}" class="read">Read Post</a>
                         </div> 
