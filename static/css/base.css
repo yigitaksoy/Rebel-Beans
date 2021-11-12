@@ -11,6 +11,7 @@
 	--bg-purple: #8167a9;
 	--bg-yellow: #FEB00F;
 	--bg-off-white: #f7f1e3;
+    --bg-orange: #ff7258;
 }
 
 body {
@@ -592,11 +593,7 @@ nav .navbar-toggler-icon:after{
     font-size: 3.8rem;
     z-index: 3;
     cursor: pointer;
-}
-  
-.post h2:hover {
-    color: var(--bg-purple);
-    transition: 0.2s;
+    color: var(--bg-orange);
 }
 
 .post a:hover{
@@ -612,6 +609,10 @@ nav .navbar-toggler-icon:after{
     font-size: .7rem;
 
 }
+
+.intro {
+    font-size: .9rem;
+}
   
 .post .info span {
     margin-right: .7rem;
@@ -620,11 +621,15 @@ nav .navbar-toggler-icon:after{
 .post .read {
     font-family: termina, sans-serif;
     font-weight: 900;
-    color: var(--bg-yellow);
+    color: var(--nav-bg);
     text-transform: uppercase;
     font-size: 1.7rem;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+.post .read:hover {
+    border-bottom: 3px solid var(--bg-orange);
 }
 
   
@@ -692,6 +697,7 @@ nav .navbar-toggler-icon:after{
 /*  Code Credit: https://github.com/yigitaksoy/Wonderdam    */
 
 #blog-post-container h2 {
+    color: var(--bg-orange);
     margin: 2rem 0;
     font-size: 3rem; 
 }
