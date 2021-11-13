@@ -883,7 +883,6 @@ nav .navbar-toggler-icon:after{
 /*  Code Credit: https://mdbootstrap.com/docs/standard/navigation/footer/  */
 
 .footer {
-	margin-top: 3rem!important;
 	background: var(--nav-bg);
 	color: var(--nav-links);
 }
