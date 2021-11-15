@@ -12,7 +12,7 @@ Rebel Beans Coffee Company
 
 <br><br>
 
-[You can view the live project here](https://rebelbeans.herokuapp.com/homepage)
+[You can view the live project here](https://rebelbeans.herokuapp.com)
 
 </div>
 
