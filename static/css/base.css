@@ -473,7 +473,7 @@ nav .navbar-toggler-icon:after{
     }
 
     .header-container {
-        padding-top: 155px;
+        padding-top: 153px;
     }
 }
 
@@ -819,6 +819,14 @@ nav .navbar-toggler-icon:after{
     .post-page-img {
       max-width: 100%;
       object-fit: cover;
+    }
+}
+
+/*      Contact     */
+
+@media screen and (max-width: 768px) {
+    #contact h2 {
+        margin-top: 1rem;
     }
 }
 
