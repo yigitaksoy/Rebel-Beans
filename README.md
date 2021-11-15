@@ -3,7 +3,7 @@ Rebel Beans Coffee Company
 </h2>
 
 <h3 align="center">
-<img src="#" alt="Rebel Beans Preview">
+<img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/images/rebelbeans-responsive.png" alt="Rebel Beans Preview">
 </h3>
 
 
@@ -20,6 +20,9 @@ Rebel Beans Coffee Company
 
 ## Overview
 
+Rebel Beans is a Amsterdam based Coffee Brewing Company with sustainability in mind. Rebel Beans products ranges from coffee beans to their signature product "Rebel Beans Cold Brew", and they are actively recycling coffee waste in the Netherlands for agricultural use. The website's main focus is to promote their products, raise brand awareness, and inform people about the benefits of recycling, and reducing coffee waste. 
+
+The website is fully interactive, built with mobile-first design in mind, and accessible on a wide range of mobile devices, and tablets.
 
 ## Contents Table
 
