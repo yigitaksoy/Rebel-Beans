@@ -536,16 +536,62 @@ nav .navbar-toggler-icon:after{
 /* 		Homepage */
 
 .jumbotron {
-	margin: 0;
-	background: url('/media/home-background.jpg') no-repeat center center;
-    min-height: 95vh;
+    margin: 0;
+    background: url('/media/home-background.jpg') no-repeat center center;
+    min-height: 80vh;
     background-size:cover;
+}
+
+#home h2 {
+    font-size: 4rem;
+    color: var(--bg-off-white);
+}
+
+#home p {
+    font-size: 1rem!important;
+    color: var(--bg-off-white);
+}
+
+@media (max-width: 768px) {
+    #home h2 {
+        margin-top: 5rem!important;
+        font-size: 4.2rem;
+        color: var(--bg-off-white);
+    }
+    
+    #home h3 {
+        padding-top: 5rem!important;
+    }
+
 }
 
 @media (max-width: 414px) {
 	.jumbotron {
 		min-height: 90vh;
 	}
+    
+    #home h2 {
+        margin-top:0!important;
+        padding-top: 3rem!important;
+        font-size: 3rem!important;
+    }
+
+    #home h3 {
+        padding-top: 0!important;
+    }
+}
+
+@media (max-width: 360px) {
+    #home h2 {
+        margin-top: 1rem!important;
+        font-size: 2.5rem!important;
+        color: var(--bg-off-white);
+    }
+    
+    #home h3 {
+        padding-top: 1rem!important;
+    }
+
 }
 
 .shop-now {
