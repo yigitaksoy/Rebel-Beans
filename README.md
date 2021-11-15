@@ -83,7 +83,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 - The colors used throughout the website are:
 
-<img src="#"  alt="color-palette">
+<img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/images/color-palette.png"  alt="color-palette">
 
 
 ### Typography
