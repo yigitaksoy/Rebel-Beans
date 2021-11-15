@@ -88,12 +88,12 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ### Typography
 
-
+- There are two Adobe fonts used throughout the website. [Cortado](https://fonts.adobe.com/fonts/cortado) used for Logo text, and headers. [Termina](https://fonts.adobe.com/fonts/termina) was used on all the texts to give the website a warm, and modern feel.
 
 
 ### Imagery
 
-
+- Image for the hompage was chosen to give the visitors a warm welcome, and set the purpose of the website. Blog images were chosen to set the sense of quality, and to make sure users have a good experience during their visit.
 
 ### Wireframes
 
