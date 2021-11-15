@@ -74,6 +74,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ## Strategy
 
+- The goal of the website is to promote their coffee products, raise brand awareness, and inform customers about the benefits of coffee recyling. Website also aims to attract more customers, and create a community around their blog by sharing weekly posts about coffee recipes, and sustainability. 
 
 
 ## Design
