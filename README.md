@@ -214,6 +214,11 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ### Features Left to Implement
 
+- Newsletter app allowing customers to be notified when new products are addded to the website.
+- Order tracking system for customers to track their order from the website.
+- Discount coupons for customers to use during sale, or holiday seasons.
+- Store locator for customers to locate stores on a Map.
+- Social sign-in or registeration using Social Media accounts such as Instagram, Facebook or Google.
 
 ## Technologies Used
 
