@@ -67,6 +67,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - I want to be able to easily sort products by category. 
 - I want to be able to get more details about a certain product on the website.
 - I want to find out how I can register for the website.
+- I want to be able to easily edit, remove or update products in my shopping bag. 
 - I want to easily be able to purchase a product from the website.
 
 #### Registered Visitor Goals
