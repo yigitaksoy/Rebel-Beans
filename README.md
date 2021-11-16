@@ -127,7 +127,90 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ### Existing Features
 
+- Responsive on all device sizes.
+- Navbar and Footer is visible on all pages.
 
+ **Navbar**
+ - Contains of 2 parts, Top Header and Main Navigation.
+ - Fixed on top of the page on all device sizes.
+ - Shown as a collapsible navbar with a hamburger button for triger on Mobile devices and Tables.
+ - Features a Shop link with product categories, making it easier for customers to sort through products.
+ - Features a search bar allowing user to make searches throughout the website. Search function allows users to search for products, product descriptions, and allows user to search products by category.
+ - Features My Account section for users to register or login to the website. Product Management link is only visible for the site Admin, allowing admin user to easily Add new products to the website. 
+ - Features a Shpping Bag showing the total amount of items in the bag. 
+ 
+ **Homepage**
+- Responsive on all device sizes.
+- Features a background image, and a jumbotron text showing the main purpose of the website. 
+- Featuers a CTA Shop now button for customers to easily navigate to products page.
+
+**Products Page**
+- Features a clean layout, and responsive on all device sizes.
+- Allows user to see the current products, their images, prices, and their categories on the website. 
+- Category badges are presented on top the page allowing user to easily sort through the products.
+- On the right side of the page a dropdown menu is presented, allowing users to easily sort products by name, price, and category.
+- Edit/Delete buttons are visible on each product card for Admin user only, allowing Admin user to easily edit, or delete a certain product from the Products Page.
+
+**Product Detail Page**
+- Features a clean layout, and responsive on all device sizes.
+- Allows user to see the price, description and category of the specific product. 
+- Underneath the product description a quantity indicator is present allowing user to select the quantity of the product they want to purchase. For whole coffee beans products, a Grind option is presented to user, allowing them to chose what kind coffee grind they like which contains For espresso, whole coffee beans, or for filter coffee.
+- Underneath a Add to bag button is present, allowing user to add their desired product, with the quantity and/or grind to their shopping bag. 
+- Next to Add to bag button, a Keep shopping link is present, allowing users to go back to the products page.
+
+**Shopping Bag**
+- Features a clean layout, and responsive on all device sizes.
+- Allows users to see all the items in their shopping bag, with their thumbnail images, descriptions and quantities. 
+- Shopping bag also allows users to easily Update or Remove items in their shopping bag.
+- On the bottom right side, a summary of their bag total is presented. Allowing user to see the total costs, and delivery fees.
+- Underneath the order summary, a Secure Checkout button is present, allowing users to go to the checkout page.
+- Next to the Secure Checkout button, Keep shopping button is present, allowing users to go back to the Products page.
+
+**Checkout Page**
+- Features a clean layout, and responsive on all device sizes.
+- Checkout page is divided in to two parts. 
+- On the left side a form for customer details is presented, allowing customers to fill-in their contact details, delivery address, and their payment details. This section is pre-filled for registered users with all their details except for the payment information.
+- On the right side summary of their shopping bag is present with all the item details, as well as the grand total.
+- Underneath the order form, Complete Order button is present, allowing customers to securely checkout. 
+- Next to Complete order button, Adjust bag button is presented, allowing customers to go back to the shopping bag page to adjust their orders.
+- After a successful checkout, customers are directed to Confirmation page where they can see the summary of their order, as well as their shipping, and contact details. 
+
+**My Profile Page**
+- Restricted for registered users only.
+- Features a clean layout, and responsive on all device sizes.
+- Allows registered users to update their contact, and shipping details, and allows them to see their past orders, and their details.
+
+**Product Management Page**
+- Restricted for registered Admin user only.
+- Features a clean layout, and responsive on all device sizes.
+- Allows Admin user to add new products to store. 
+
+**Blog Page**
+- Features a clean layout, and responsive on all device sizes.
+- Allows users to see all the Posts added by the Admin user.
+- Each blog post contains blog image, title, information about the author, comment counter showing how many comments the post has, a brief preview of the text content and the date it was added.
+
+**Blog Detail Page**
+- Features a clean layout, and responsive on all device sizes.
+- Blog detail page features blog image, title, information about the author, and the date it was added.
+- Underneath the blog post a comment section is present allowing users to read the current comments on that specific post.
+- Underneath the current comments section, a comment form is present for registered users, allowing them to leave a comment on that post. 
+- Comment form is hidden for unregistered or for users who are signed-out. Instead a login, register section is present.
+- Each comment is moderated by the Admin before they approved, allowing Admin user to filter spamming or inappropriate content.
+
+**Contact Page**
+- Features a contact form for users or customers to contact the Admin.
+- Form allows users to select one of the pre-defined topics allowing Admin to easily categorize the requests.
+
+**Registeration Page**
+- Features a registration form for users to easily register for the website
+
+**Login Page**
+- Allows users to easily login to their account to view their past orders, update their details, or leave blog comments.
+- Login page also features a Forgot password link, allowing registered users to easily recover their passwords.
+
+**Footer**
+- Contains four sections; Section showing all the accepted payments on the website, Product links allowing users to easily go the desired product category, Quick links to easily navigate through the website, Contact section allowing users to see the store location that opens on a new page using Google Maps, and a email link for users to easily contact the Admin via email.
 
 ### Features Left to Implement
 
