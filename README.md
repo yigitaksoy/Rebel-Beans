@@ -229,6 +229,14 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 - [Visiual Studio Code ](https://code.visualstudio.com)
     - **Vscode** Is the code editor used to develop, commit & push this project to Github.
+- [Django](https://www.djangoproject.com/)
+    - **Django**  high-level Python web framework that enables rapid development of secure and maintainable websites.
+- [AWS](https://aws.amazon.com/)
+    - **AWS**  cloud computing platform used for hosting static, and media files of the project.
+- [PostgreSQL](https://www.postgresql.org/)
+    - **PostgreSQL** used for creating the Database for the project.
+- [Stripe](https://stripe.com/)
+    - **PostgreSQL** used for creating the Payments infrastructure for the project.
 - [GitHub](https://github.com/)
     - **Github** is used for:
     1. Tracking the project, and for version control.
