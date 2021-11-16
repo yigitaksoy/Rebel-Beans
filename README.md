@@ -60,14 +60,35 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 #### First Time Visitor Goals
 
-
-
+- I want to understand the main purpose of the website.
+- I want to easily navigate through the website. 
+- I want to be able to easily see the products on the website.
+- I want to be able to search through the products on the website.
+- I want to be able to easily sort products by category. 
+- I want to be able to get more details about a certain product on the website.
+- I want to find out how I can register for the website.
+- I want to easily be able to purchase a product from the website.
 
 #### Registered Visitor Goals
 
+- I want to find out how I can login to my account, or recover my password on the website.
+- I want to find out how I can see my past orders on the website. 
+- I want to find out how I can save my address, and contact details so I can use them later.
+- I want to get more information about the brand, and their mission.
+- I want to find out how I can leave comments on the website's blog posts. 
+- I want to find out how I can contact the site owner. 
 
 
 #### Admin User Goals
+
+- I want to be able to easily Add/Edit/Delete products.
+- I want to be able to easily Add/Edit/Delete categories.
+- I want my customers to make purchases with ease of mind, and have secure payments.
+- I want to be able to easily Add/Edit/Delete posts on my Blog. 
+- I want to be able to moderate each comment on Blog posts.
+- I want to offer customers free shipping above a certain treshold, and increase sales.
+- I want my customers to receieve automated confirmation e-mails with their order details after a successfull purchase, or when they register to the website.
+
 
 
 
