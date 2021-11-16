@@ -236,7 +236,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - [PostgreSQL](https://www.postgresql.org/)
     - **PostgreSQL** used for creating the Database for the project.
 - [Stripe](https://stripe.com/)
-    - **PostgreSQL** used for creating the Payments infrastructure for the project.
+    - **Stripe** used for creating the Payments infrastructure for the project.
 - [GitHub](https://github.com/)
     - **Github** is used for:
     1. Tracking the project, and for version control.
