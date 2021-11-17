@@ -435,9 +435,9 @@ The process of cloning is now completed. For further information on cloning,
     |SECRET_KEY|YOUR_SECRET_KEY|
     |STRIPE_PUBLIC_KEY|YOUR_STRIPE_PUBLIC_KEY|
     |STRIPE_SECRET_KEY|YOUR_STRIPE_SECRET_KEY|
+    |STRIPE_WH_SECRET|YOUR_STRIPE_WH_SECRET|
     |EMAIL_HOST_USER|YOUR_EMAIL_ADDRESS|
     |EMAIL_HOST_PASS|YOUR_EMAIL_APP_PASSWORD|
-    |STRIPE_WH_SECRET|YOUR_STRIPE_WH_SECRET|
 
 - Then push to Heroku:
 ```console
@@ -504,7 +504,7 @@ The process of cloning is now completed. For further information on cloning,
 ```
 - Add it to your installed apps in your settings.py
 - Create `custom_storages.py` file in your project root and add the following code, and then save:
-```console
+```console python
     from django.conf import settings
     from storages.backends.s3boto3 import S3Boto3Storage
     
@@ -529,8 +529,8 @@ The process of cloning is now completed. For further information on cloning,
         }
         
         # Bucket Config
-        AWS_STORAGE_BUCKET_NAME = 'rebel-beans'
-        AWS_S3_REGION_NAME = 'eu-central-1'
+        AWS_STORAGE_BUCKET_NAME = 'YOUR_BUCKET_NAME'
+        AWS_S3_REGION_NAME = 'YOUR_BUCKET_REGION'
         AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
         AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
