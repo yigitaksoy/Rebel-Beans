@@ -252,6 +252,10 @@ The website is fully interactive, built with mobile-first design in mind, and ac
     - **JQuery**  used with Bootstrap.
 - [Heroku](https://www.heroku.com/)
      - **Heroku**  A platform as a service (PaaS) used for deploying the project.
+- [Pydot](https://github.com/pydot/pydot)
+    - **Pydot** Graphviz's dot language Python interface.
+- [GraphViz](https://www.graphviz.org)
+    - **GraphViz** Used for visualizing database.
 - [Adobe Fonts](https://fonts.adobe.com/)
     - **Adobe Fonts**  for importing typography.
 - [Font Awesome](https://fontawesome.com/)
@@ -264,9 +268,8 @@ The website is fully interactive, built with mobile-first design in mind, and ac
    - **W3C CSS Validator** to check validity of CSS code.
 - [JSHint Javascript Code Quality Tool](https://jshint.com/)
    - **JSHint Javascript Code Quality Tool** to check the quality of the Javascript code.
-- [Balsamiq:](https://balsamiq.com/)
+- [Balsamiq](https://balsamiq.com/)
     - **Balsamiq** was used for creating [wireframes]() during the design process.
-
 
 
 
@@ -276,8 +279,9 @@ Testing information can be found in seperate [TESTING.md](https://github.com/yig
 
 ## Database
 
+- Database schema was exported from Django using [pydot](https://github.com/pydot/pydot) and [GraphViz](https://www.graphviz.org).
 
-<img src="#">
+<img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/images/rebelbeans-db.png">
 
 
 ## Deployment
