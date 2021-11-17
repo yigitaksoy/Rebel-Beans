@@ -215,7 +215,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - Features a contact form for users or customers to contact the Admin.
 - Form allows users to select one of the pre-defined topics allowing Admin to easily categorize the requests.
 
-**Registeration Page**
+**Registration Page**
 - Features a registration form for users to easily register for the website
 
 **Login Page**
@@ -231,7 +231,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - Order tracking system for customers to track their order from the website.
 - Discount coupons for customers to use during sale, or holiday seasons.
 - Store locator for customers to locate stores on a Map.
-- Social sign-in or registeration using Social Media accounts such as Instagram, Facebook or Google.
+- Social sign-in or registration using Social Media accounts such as Instagram, Facebook or Google.
 
 ## Technologies Used
 
@@ -249,7 +249,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
     - **Vscode** Is the code editor used to develop, commit & push this project to Github.
 - [Django](https://www.djangoproject.com/)
     - **Django**  high-level Python web framework that enables rapid development of secure and maintainable websites.
-- [AWS](https://aws.amazon.com/)
+- [Amazon Web Services](https://aws.amazon.com/)
     - **AWS**  cloud computing platform used for hosting static, and media files of the project.
 - [PostgreSQL](https://www.postgresql.org/)
     - **PostgreSQL** used for creating the Database for the project.
@@ -504,7 +504,7 @@ The process of cloning is now completed. For further information on cloning,
 ```
 - Add it to your installed apps in your settings.py
 - Create `custom_storages.py` file in your project root and add the following code, and then save:
-```console python
+```python
     from django.conf import settings
     from storages.backends.s3boto3 import S3Boto3Storage
     
