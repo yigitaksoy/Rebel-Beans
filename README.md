@@ -120,6 +120,19 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ### Wireframes
 
+- [Homepage](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Homepage.png)
+- [Products Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Products%20Page.png)
+- [Products Detail Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Product%20Detail%20Page.png)
+- [Blog Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Blog%20Page.png)
+- [Blog Detail Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Blog%20Detail%20Page.png)
+- [About Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/About%20Page.png)
+- [Shopping Bag Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Shopping%20Bag.png)
+- [Checkout Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Checkout%20Page.png)
+- [Contact Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Contact%20Page.png)
+- [Product Management Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Product%20Management%20Page.png)
+- [Login Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Login%20Page.png)
+- [Profile Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Profile%20Page.png)
+- [Register Page](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes/Register%20Page.png)
 
 
 
@@ -269,7 +282,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - [JSHint Javascript Code Quality Tool](https://jshint.com/)
    - **JSHint Javascript Code Quality Tool** to check the quality of the Javascript code.
 - [Balsamiq](https://balsamiq.com/)
-    - **Balsamiq** was used for creating [wireframes]() during the design process.
+    - **Balsamiq** was used for creating [wireframes](https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/wireframes) during the design process.
 
 
 
