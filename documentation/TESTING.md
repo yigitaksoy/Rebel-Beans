@@ -99,63 +99,85 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 - __Homepage__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/homepage.png" >
 </p>
 
 - __Products__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/products-page.png" >
 </p>
 
 - __Product Detail__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/product-detail-page.png" >
 </p>
 
-- __Product Management__
+- __Add Product__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/add-product.png" >
+</p>
+<br>
+- Highlighted elements are added dynamically by crispy_forms, since there are no known errors with the page these errors were ignored.
+<br>
+<br>
+
+- __Edit Product__
+<p align="center">
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/edit-product.png" >
+</p>
+<br>
+- Highlighted elements are added dynamically by crispy_forms, since there are no known errors with the page these errors were ignored.
+<br>
+<br>
+
+- __Shopping Bag Page__
+<p align="center">
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/shopping-bag-page.png" >
 </p>
 
 - __Checkout Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/checkout.png" >
 </p>
 
 - __Blog Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/blog-page.png" >
 </p>
 
 - __Blog Detail Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/blog-detail-page.png" >
 </p>
 
 - __Login__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/login.png" >
 </p>
 
 - __Register__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/register.png" >
 </p>
 
 - __Profile__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/profile-page.png" >
 </p>
 
 - __About__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/about.png" >
 </p>
 
 - __Contact__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/contact-page.png" >
 </p>
+<br>
+- Subject field is added dynamically by the Contact models and crispy_forms since this error doesnt cause any problems, the error was ignored.
+<br>
+<br>
 
 
 
@@ -172,9 +194,11 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 <details><summary><b>Click here for JSHint results</b></summary>
 
 - __JSHint Results__
+
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/jshint-results/jshint-results.png" >
 </p>
+
 </details>
 
 <details><summary><b>PEP8 Online results</b></summary>
