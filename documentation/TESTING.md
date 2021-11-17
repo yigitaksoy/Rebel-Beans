@@ -165,7 +165,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 - __CSS Validator Results__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/css-validator-results/css-validator-results.png" >
 </p>
 </details>
 
@@ -219,62 +219,67 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   
 - __Homepage__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/homepage-lighthouse.png" >
 </p>
 
 - __Login__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/login-lighthouse.png" >
 </p>
 
 - __Register__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/register-lighthouse.png" >
 </p>
 
 - __Contact__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/contact-lighthouse.png" >
 </p>
 
 - __Profile__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/profile-lighthouse.png" >
 </p>
 
 - __About__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/about-page-lighthouse.png" >
 </p>
 
 - __Products__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/products-page-lighthouse.png" >
 </p>
 
 - __Product Detail__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/product-detail-lighthouse.png" >
 </p>
 
 - __Product Management__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/product-detail-lighthouse.png" >
+</p>
+
+- __Shopping Bag Page__
+<p align="center">
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/shopping-bag-lighthouse.png" >
 </p>
 
 - __Checkout Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/checkout-lighthouse.png" >
 </p>
 
 - __Blog Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/blog-page-lighthouse.png" >
 </p>
 
 - __Blog Detail Page__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/blog-detail-lighthouse.png" >
 </p>
 
   </details>
