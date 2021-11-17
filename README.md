@@ -87,9 +87,8 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - I want my customers to make purchases with ease of mind, and have secure payments.
 - I want to be able to easily Add/Edit/Delete posts on my Blog. 
 - I want to be able to moderate each comment on Blog posts.
-- I want to offer customers free shipping above a certain treshold, and increase sales.
-- I want my customers to receieve automated confirmation e-mails with their order details after a successfull purchase, or when they register to the website.
-
+- I want to be able to see and manage current orders on the website.
+- I want to be able to see and manage current users on the website.
 
 
 
