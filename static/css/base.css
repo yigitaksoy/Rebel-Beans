@@ -14,6 +14,10 @@
     --bg-orange: #FF5540;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -482,10 +486,6 @@ nav .navbar-toggler-icon:after{
         padding-top: 75px;
     }
 
-    body {
-        height: calc(100vh - 116px);
-    }
-
     .nav-link {
         padding: 0.15rem;
     }
@@ -943,6 +943,8 @@ nav .navbar-toggler-icon:after{
 .footer {
 	background: var(--nav-bg);
 	color: var(--nav-links);
+    position: sticky;
+    top: 100vh;
 }
 
 .copyright span {
