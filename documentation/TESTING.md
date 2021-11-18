@@ -231,8 +231,133 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 ### Functionality Testing
 
+  #### Navbar - PASS
 
+  - All links are working, and takes the user where they want to go.
+  - Search bar is working, and lets user search through products, categories, and product details. If user input doesnt match any results, "You didn't enter any search criteria!" message is shown.
 
+  #### Homepage - PASS
+
+  - CTA button is working as expected, and directs users to Products page.
+
+  #### Register - PASS
+
+  - Form inputs work as expected and stores the data in the database, and registers user.
+  - Form validations work as expected, and gives feedback upon unmatched format, invalid data, or for existing user.
+  - Submit button works as expected and submits data successfully, and send verification e-mail for users.
+
+  #### Login - PASS
+
+  - Form inputs works perfectly, and form validations work as expected and gives feedback upon unmatched format or incorrect username/email and password, or if user doesn't exist in the database.
+  - Submit button works as expected and submits data successfully, and redirects user to homepage with a success toast message.
+  - Forgot password link works as expected and directs user to password recovery page.
+
+  #### Logout - PASS
+
+  - Logout functionality works perfectly, logs out user, and removes session cookies.
+
+  #### Profile - PASS
+
+  - All recent purchases are shown in the Order History tab.
+  - All recent purchase links works as expected and open in a new page with the past order information.
+  - User details form works as expected, and successfully updates user details.
+
+  #### Products - PASS
+
+  - Products page works as expected, and renders all the products in the database.
+  - Category badges work as expected, and sorts items by specified categories.
+  - Sort menu works as expected and sorts products by A-Z, Price High - Low, and by Category.
+  - Edit and Remove buttons for products are visible for Admin user, and works as expected.
+
+  #### Product Detail - PASS
+
+  - Page works as expected, renders the specified product.
+  - Quantity input buttons work as expected, adds specified amount and any quantity between 1-99 is restricted.
+  - Item Grind selector fields work as expected and adds the specified Coffee Grind, Grind field is invisible if the current product doesn't have `has_grind` attribute.
+  - Keep shopping button works as expected and redirects user back to Products page.
+  - Add to Bag button works as expected, and adds the specified item, quantity, and grind into the shopping bag, with a success message.
+
+  #### Product Management Add/Edit - PASS
+
+  - Page works as expected and renders product management form.
+  - Form successfully Adds new product to specified category, along with its data, and images.
+  - Form successfully Edits specified product, along with its data, and images.
+  - Submit button works as expected and submits data.
+  #### Bag - PASS
+
+  - Page works as expected, and renders all the items in the bag with their details.
+  - Remove, and Update buttons work as expected and Removes or Updates specified product, or item grind.
+  - Grand total, and delivery treshold are visible, and accurate.
+  - Keep shopping button works as expected and redirects user back to Products page.
+  - Secure Checkout button works as expected and directs user to the Checkout Page.
+
+  #### Checkout - PASS
+
+  - Page works as expected and renders all the items in bag with their details in order summary section.
+  - Checkout form works as expected and successfully submits data for payment.
+  - Checkout form validation works as expected and gives feedback upon unmatched format, and incorrect input.
+  - Upon successful payment, a confirmation e-mail is sent to user with their order details.
+
+  #### Checkout Success - PASS
+
+  - Page works as expected, renders, and summarizes the order history for customers with their confirmation number.
+
+  #### Blog - PASS
+
+  - Page works as expected, and renders all the blog data from the database.
+  - All post images, titles, and read more links work as expected and takes the user to the post page.
+  - Pagination works as expected, and only shows 4 posts per page.
+
+  #### Blog Detail - PASS
+
+  - Successfully renders all the data including the post image.
+  - Comment section works as expected and shows all the current comments, with a comment counter. If there are no comments on the post, a message is shown to the user if they would like to add one.
+  - Comment form works as expected and submits user comment data, forwards it to Admin for moderation before posting.
+  - Comment success alert message works as expected.
+
+  #### About - PASS
+
+  - Page works as expected and renders all the About text and images.
+
+  #### Contact - PASS
+
+  - Page works as expected and renders the contact form.
+  - Contact form works as expected and gives feedback upon umatched format, or empty fields.
+  - Submit button works as expected and submits the form data, and sends an email to the Admin user.
+
+  #### Footer - PASS
+
+  - Footer is present on all pages.
+  - Products links work as expected, and redirects user to specified category.
+  - Quick links work as expected, and redirects user to the specified page.
+  - Social, and external links on the footer works as expected, and all the links open in a new tab.
+
+  #### Error 400 - PASS
+
+  - Works as expected, successfuly captures and handles bad request error.
+  - Go back button on error page works as expected and redirects user back to the homepage.
+
+  #### Error 403 - PASS
+
+  - Works as expected, successfuly captures and handles forbidden error.
+  - Go back button on error page works as expected and redirects user back to the homepage.
+
+  #### Error 404 - PASS
+
+  - Works as expected, successfuly captures and handles page not found error.
+  - Go back button on error page works as expected and redirects user back to the homepage.
+
+  #### Error 500 - PASS
+
+  - Works as expected, successfuly captures and handles internal server error.
+  - Go back button on error page works as expected and redirects user back to the homepage.
+
+  #### Stripe Webhooks - PASS
+
+  - Webhooks works as expected, and gives 200 code.
+  <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/webhooks/webhooks.png" >
+  </p>
 
 
 ### Google Lighthouse Testing
