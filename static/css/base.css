@@ -50,6 +50,10 @@ p {
     font-size: .8rem;
 }
 
+.shop {
+    font-size: 1.25rem!important;
+}
+
 /*  Code Credit: Code Institute Boutique Ado Project  */
 
 .btn-black {
@@ -469,6 +473,10 @@ nav .navbar-toggler-icon:after{
 		background-size: 100% 90%;
 		padding: 6px 30px;
 	}
+    
+    .shop {
+        font-size: 1.2rem!important;
+    }
 }
 
 @media (min-width: 992px) {
