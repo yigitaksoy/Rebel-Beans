@@ -233,8 +233,11 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
   #### Navbar - PASS
 
-  - All links are working, and takes the user where they want to go.
+  - All links, including logo are working as expected, and takes the user where they want to go.
   - Search bar is working, and lets user search through products, categories, and product details. If user input doesnt match any results, "You didn't enter any search criteria!" message is shown.
+  - My Account links work as expected, and succefully directs user to Register, Login, Profile, and Product Management pages. Logout link successfully logs out user.
+  - Shop link works as exptected and allows user to sort products by their categories, or successfully directs user to Products page.
+  - Shopping bag link works, and updates successfully when user adds or removes a product from/to the bag, and reflects the grand total.
 
   #### Homepage - PASS
 
@@ -296,11 +299,13 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Page works as expected and renders all the items in bag with their details in order summary section.
   - Checkout form works as expected and successfully submits data for payment.
   - Checkout form validation works as expected and gives feedback upon unmatched format, and incorrect input.
+  - Checkout form sucessfully saves, and updates user data for them to use later.
   - Upon successful payment, a confirmation e-mail is sent to user with their order details.
 
   #### Checkout Success - PASS
 
   - Page works as expected, renders, and summarizes the order history for customers with their confirmation number.
+  - CTA button on checkout success page works as expected, and directs user to Products page.
 
   #### Blog - PASS
 
