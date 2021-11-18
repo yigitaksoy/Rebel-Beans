@@ -147,7 +147,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 - __Blog Detail Page__
 <p align="center">
-  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/blog-detail-page.png" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/html-validator-results/blog-detail.png" >
 </p>
 
 - __Login__
