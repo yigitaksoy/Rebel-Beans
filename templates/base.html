@@ -10,7 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Rebel Beans Coffee Company">
         <meta name="keywords" content="Coffee, Coffee Beans, Cold Brew Coffee, Filter Coffee">
-        <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon.ico">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="{% static 'favicon/favicon.ico' %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
     {% endblock %}
     
     {% block extra_meta %}
