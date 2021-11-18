@@ -524,6 +524,15 @@ nav .navbar-toggler-icon:after{
         padding: 10px 28px;
     }
     
+    .btn {
+        font-size: .7rem;
+    }
+    
+    .btn.btn-outline-black.rounded-0.btn-md,
+    .btn.btn-black.rounded-0.btn-md {
+        font-size: .5rem!important;
+    }
+    
 }
 
 @media (max-width: 320px) {
