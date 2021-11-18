@@ -558,6 +558,12 @@ The process of cloning is now completed. For further information on cloning,
 
 ### Content
 - All the content including product images, and product descriptions were taken from [Rebel Beans](https://rebelbeans.com/) with their consent. 
+- Cold Brew Ice Cream recipe, and image on the blog page is taken from [Coffee Affection](https://coffeeaffection.com/cold-brew-ice-cream-recipe/).
+- Coffee Cake recipe, and image on the blog page is taken from [BBC Good Food](https://www.bbcgoodfood.com/recipes/coffee-cake).
+- Molten Fudge Cakes with Cold Brew Syrup recipe, and image on the blog page is taken from [Adventures in Cooking](https://adventuresincooking.com/molten-fudge-cakes-with-cold-brew-syrup/).
+- Vietnamese Iced Cofee Cake recipe, and image on the blog page is taken from [Hummingbird High](https://www.hummingbirdhigh.com/2017/10/vietnamese-iced-coffee-cake.html).
+- Cold Brew Coffee Ice Cream recipe, and image on the blog page is taken from [Fuss free flavours](https://fussfreeflavours.com/cold-brew-coffee-ice-cream/).
+
 
 ### Media
 - Image for the homepage was taken from [Unsplash](https://unsplash.com/).
