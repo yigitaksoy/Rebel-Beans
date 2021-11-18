@@ -46,6 +46,10 @@ p {
 	color: var(--font-color) !important
 }
 
+.btn {
+    font-size: .9rem;
+}
+
 /*  Code Credit: Code Institute Boutique Ado Project  */
 
 .btn-black {
@@ -502,7 +506,7 @@ nav .navbar-toggler-icon:after{
     .btn.btn-outline-black.rounded-0.btn-md,
     .btn.btn-black.rounded-0.btn-md {
         padding: .375rem .375rem;
-        font-size: .75rem;
+        font-size: .6rem;
     }
 
     .increment-qty, .decrement-qty {
