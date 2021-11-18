@@ -1,4 +1,10 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    HttpResponse,
+    get_object_or_404
+)
 from django.contrib import messages
 
 from products.models import Product
@@ -9,9 +15,10 @@ def view_bag(request):
 
     return render(request, 'bag/bag.html')
 
+
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -24,17 +31,26 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if grind in bag[item_id]['items_by_grind'].keys():
                 bag[item_id]['items_by_grind'][grind] += quantity
-                messages.success(request, f'Updated grind {grind.upper()} {product.name} quantity to {bag[item_id]["items_by_grind"][grind]}')
+                messages.success(request,
+                                 (f'Updated grind {grind.upper()} '
+                                  f'{product.name} quantity to '
+                                  f'{bag[item_id]["items_by_grind"][grind]}'))
             else:
                 bag[item_id]['items_by_grind'][grind] = quantity
-                messages.success(request, f'Added grind {grind.upper()} {product.name} to your bag')
+                messages.success(request,
+                                 (f'Added grind {grind.upper()} '
+                                  f'{product.name} to your bag'))
         else:
             bag[item_id] = {'items_by_grind': {grind: quantity}}
-            messages.success(request, f'Added grind {grind.upper()} {product.name} to your bag')
+            messages.success(request,
+                             (f'Added grind {grind.upper()} '
+                              f'{product.name} to your bag'))
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request,
+                             (f'Updated {product.name} '
+                              f'quantity to {bag[item_id]}'))
         else:
             bag[item_id] = quantity
             messages.success(request, f'Added {product.name} to your bag')
@@ -45,7 +61,7 @@ def add_to_bag(request, item_id):
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
-    
+
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     grind = None
@@ -56,16 +72,23 @@ def adjust_bag(request, item_id):
     if grind:
         if quantity > 0:
             bag[item_id]['items_by_grind'][grind] = quantity
-            messages.success(request, f'Updated grind {grind.upper()} {product.name} quantity to {bag[item_id]["items_by_grind"][grind]}')
+            messages.success(request,
+                             (f'Updated grind {grind.upper()} '
+                              f'{product.name} quantity to '
+                              f'{bag[item_id]["items_by_grind"][grind]}'))
         else:
             del bag[item_id]['items_by_grind'][grind]
             if not bag[item_id]['items_by_grind']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed grind {grind.upper()} {product.name} from your bag')
+            messages.success(request,
+                             (f'Removed grind {grind.upper()} '
+                              f'{product.name} from your bag'))
     else:
         if quantity > 0:
             bag[item_id] = quantity
-            messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+            messages.success(request,
+                             (f'Updated {product.name} '
+                              f'quantity to {bag[item_id]}'))
         else:
             bag.pop(item_id)
             messages.success(request, f'Removed {product.name} from your bag')
@@ -88,7 +111,9 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_grind'][grind]
             if not bag[item_id]['items_by_grind']:
                 bag.pop(item_id)
-            messages.success(request, f'Removed grind {grind.upper()} {product.name} from your bag')
+            messages.success(request,
+                             (f'Removed grind {grind.upper()} '
+                              f'{product.name} from your bag'))
         else:
             bag.pop(item_id)
             messages.success(request, f'Removed {product.name} from your bag')
