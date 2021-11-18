@@ -963,3 +963,49 @@ nav .navbar-toggler-icon:after{
 .footer a:hover {
 	color: var(--bg-purple)!important;
 }
+
+/* Error Handlers Code Credit: https://github.com/yigitaksoy/Wonderdam */
+
+#handler {
+    margin-top: 4rem;
+    height: 70vh;
+  }
+  
+#error-container {
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+#error-container h3 {
+    font-family: cortado, sans-serif!important;
+  }
+  
+#error-container h2 {
+      font-family: termina, sans-serif!important;
+      font-weight: 900;
+      font-size: 2.5rem;
+}
+
+.error {
+    font-size: 12rem!important;
+    color: var(--bg-orange);
+}
+  
+.g-back {
+      font-size: 1.5rem;
+}
+
+  
+@media screen and (max-width: 768px) {
+  
+    .error {
+      font-size: 8rem!important;
+    }
+  
+    .error-text {
+      font-size: 1.5rem!important;
+    }
+    
+
+}
