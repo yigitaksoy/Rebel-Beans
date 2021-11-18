@@ -45,20 +45,20 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 * **I want to easily navigate through the website.**
     - At the top of the page a sticky navigation bar is present, displaying all the links for users to easily navigate through the website.
 * **I want to be able to easily see the products on the website.**
-    - On the navigation bar a Shop link, and on the Main page of the website a Shop Now button for users to easily navigate to products page. 
+    - On the navigation bar a Shop link, and on the Main page of the website a Shop Now button for users to easily navigate to products page.
 * **I want to be able to search through the products on the website.**
-    - On the navigation bar, there is a search bar present for users to easily search for products.  
+    - On the navigation bar, there is a search bar present for users to easily search for products.
 * **I want to be able to easily sort products by category.**
     - On the navigation bar users can hover over the Shop link and sort through the products by category. Sorting is also available on the products page, on the right hand side, with dropdown menu which is present for users to easily sort products by category, price or by name.
 * **I want to be able to get more details about a certain product on the website.**
     - On the products page, users can get more details about a specific product by clicking on the product image.
 * **I want to find out how I can register for the website.**
-    - On the main and mobile top header, My Account link is present for users to easily register fot the website. 
+    - On the main and mobile top header, My Account link is present for users to easily register fot the website.
 * **I want to be able to easily edit, remove or update products in my shopping bag.**
     - On the shopping bag page remove and update buttons with quantity indicators are present for users.
 * **I want to easily be able to purchase a product from the website.**
-    - On the shopping bag page, at the right bottom side, there is a Secure Checkout button present which directs users to the checkout page. 
-    
+    - On the shopping bag page, at the right bottom side, there is a Secure Checkout button present which directs users to the checkout page.
+
 #### Registered Visitor Goals
 
 * **I want to find out how I can login to my account, or recover my password on the website.**
@@ -72,7 +72,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 * **I want to find out how I can leave comments on the website's blog posts.**
     - On each blog post page, underneath the blog post content, there is a comment form present for registered users to add comments on current posts.
 * **I want to find out how I can contact the site owner.**
-    - On the navigation bar there is a link for the Contact page where users can contact the website Admin using the contact form. 
+    - On the navigation bar there is a link for the Contact page where users can contact the website Admin using the contact form.
 
 #### Admin User Goals
 
@@ -81,7 +81,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 * **I want to be able to easily Add/Edit/Delete categories.**
     - On the Admin backend, under Categories tab, Admin user can easily Add/Edit/Delete categories.
 * **I want my customers to make purchases with ease of mind, and have secure payments.**
-    - Website uses the Stripe Payments infrastruce which allows al all the transactions on the website to be 100% secure. 
+    - Website uses the Stripe Payments infrastruce which allows al all the transactions on the website to be 100% secure.
 * **I want to be able to easily Add/Edit/Delete posts on my Blog.**
     - On the Admin backend, under the Posts tab, Admin user can easily Add/Edit/Delete posts, and can save Blog posts as drafts for later.
 * **I want to be able to moderate each comment on Blog posts.**
@@ -205,7 +205,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 - __PEP8 Online Results__
 <p align="center">
-  <img src="#" >
+  <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/pep8-results/pep8-compliance.png" >
 </p>
 </details>
 
@@ -217,30 +217,30 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 #### Responsive Design - PASS
 
-- All pages were tested locally, and on Heroku using Chrome, Firefox, IE, and Safari. 
+- All pages were tested locally, and on Heroku using Chrome, Firefox, IE, and Safari.
 - All pages tested for responsiveness in different device sizes using Google Chrome Developer Tools, and Google Chrome Responsive Viewer extension;
-  - Desktop 
-  - iPhone 5/6/7/8/X 
-  - iPad 1/2/3/Pro 
+  - Desktop
+  - iPhone 5/6/7/8/X
+  - iPad 1/2/3/Pro
   - Galaxy Android phones
 - All the pages were also tested manually using;
   - iPhone 5s/6s/8/X/XS/11/
   - Samsung Galaxy S8/Note 10+
-  - iPad Air 2 
+  - iPad Air 2
   - iPad Pro 3
-  
-### Functionality Testing
-  
 
-  
-  
-  
-### Google Lighthouse Testing 
-  
+### Functionality Testing
+
+
+
+
+
+### Google Lighthouse Testing
+
   - All pages were tested for web quality using Google's Lighthouse.
-  
+
   <details><summary><b>Click here for Lighthouse results</b></summary>
-  
+
 - __Homepage__
 <p align="center">
   <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/lighthouse-scores/homepage-lighthouse.png" >
@@ -307,5 +307,5 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 </p>
 
   </details>
-  
-  #### __back to [Contents Table](#contents-table)__ 
+
+  #### __back to [Contents Table](#contents-table)__
