@@ -564,10 +564,11 @@ The process of cloning is now completed. For further information on cloning,
 
 ### Codes
 - All the code that was used to build the home, bag, checkout, products, profile apps, as well as setting up Stripe Payments, and parts of the CSS has been taken from the Boutique Ado Walkthrough Project by the Code Institute, with minor modifications.
-- Code for creating the [Blog application](https://djangocentral.com/building-a-blog-application-with-django/), [Comments](https://djangocentral.com/creating-comments-system-with-django/), and [Pagination](https://djangocentral.com/adding-pagination-with-django/) has been taken from the [Django Central](https://djangocentral.com/)
+- Code for creating the [Blog application](https://djangocentral.com/building-a-blog-application-with-django/), [Comments](https://djangocentral.com/creating-comments-system-with-django/), and [Pagination](https://djangocentral.com/adding-pagination-with-django/) has been taken from the [Django Central](https://djangocentral.com/).
+- Code for setting up Custom Error Handling is from [Django Central](https://docs.djangoproject.com/en/3.2/topics/http/views/) and [Medium](https://medium.com/@yildirimabdrhm/python-django-handling-custom-error-page-807087352bea). 
 - Code for creating the contact app has been taken from [Ordinary Coders](https://www.ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend) with minor modifications.
 - Code for the Blog and Blog Post templates and styles were taken from my [Wonderdam Milestone Project](https://github.com/yigitaksoy/Wonderdam).
-- Code for the Responsove Bootstrap Navigation was taken from [Codepen](https://codepen.io/ig_design/pen/omQXoQ)
+- Code for the Responsove Bootstrap Navigation was taken from [Codepen](https://codepen.io/ig_design/pen/omQXoQ).
 
 
 ## Acknowledgements
