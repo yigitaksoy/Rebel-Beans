@@ -302,20 +302,20 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Checkout form validation works as expected and gives feedback upon unmatched format, and incorrect input.
   - Checkout form sucessfully saves, and updates user data for them to use later.
   - Upon successful payment, a confirmation e-mail is sent to user with their order details.
- <p align="center">
+ <h3 align="center">
     <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/order-confirmation.png" >
-  </p>
+ </h3>
   
   #### Checkout Success - PASS
 
   - Page works as expected, renders, and summarizes the order for customers with their confirmation number.
   - CTA button on checkout success page works as expected, and directs user to Products page.
-  <p align="center">
+  <h3 align="center">
     <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/checkout-toast.png" >
-  </p>
-  <p align="center">
+  </h3>
+  <h3 align="center">
     <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/checkout-success.png" >
-  </p>
+ </h3>
   
 
   #### Blog - PASS
@@ -340,13 +340,13 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Page works as expected and renders the contact form.
   - Contact form works as expected and gives feedback upon umatched format, or empty fields.
   - Submit button works as expected and submits the form data, and sends an email to the Admin user.
-  <p align="center">
+  <h3 align="center">
     <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/contact-toast.png" >
-  </p>
+  </h3>
   
-  <p align="center">
+  <h3 align="center">
     <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/contact-mail.png" >
-  </p>
+  </h3>
   
   #### Footer - PASS
 
