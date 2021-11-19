@@ -10,6 +10,7 @@ class ContactForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         """ Add Placeholder texts and classes for the form """
+
         super().__init__(*args, **kwargs)
 
         placeholders = {
@@ -24,6 +25,6 @@ class ContactForm(forms.ModelForm):
             placeholder = f'{placeholders[field]} *'
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].label = False
-        
+
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
