@@ -211,6 +211,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
 ### Debugging
 
+- During the testing stages of the project, I was having issues with removing items from the shopping bag. Issue was occuring when you add the same Whole Bean product with more than one type of grind, and trying to remove one of the grinds. Doing this was resulting in removing all the items with the same Coffee Bean type, instead of removing the specified girnd type. After further testing, and going over the code, I've realized there was a logic error. I had the `data-coffe-grind` in the anchor data, but in JS I was trying to get `grind` instead of `coffee-grind`, and I was passing it as `grind` while Pythong view was expecting `coffee-grind`. After adjusting the code, this issue was fixed, and I was successfully able to edit coffee grind types on the shopping page.
 
 
 ### Further Manual Testing
@@ -301,11 +302,21 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Checkout form validation works as expected and gives feedback upon unmatched format, and incorrect input.
   - Checkout form sucessfully saves, and updates user data for them to use later.
   - Upon successful payment, a confirmation e-mail is sent to user with their order details.
-
+ <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/order-confirmation.png" >
+  </p>
+  
   #### Checkout Success - PASS
 
-  - Page works as expected, renders, and summarizes the order history for customers with their confirmation number.
+  - Page works as expected, renders, and summarizes the order for customers with their confirmation number.
   - CTA button on checkout success page works as expected, and directs user to Products page.
+  <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/checkout-toast.png" >
+  </p>
+  <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/checkout-success.png" >
+  </p>
+  
 
   #### Blog - PASS
 
@@ -329,7 +340,14 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Page works as expected and renders the contact form.
   - Contact form works as expected and gives feedback upon umatched format, or empty fields.
   - Submit button works as expected and submits the form data, and sends an email to the Admin user.
-
+  <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/contact-toast.png" >
+  </p>
+  
+  <p align="center">
+    <img src="https://github.com/yigitaksoy/Rebel-Beans/blob/master/documentation/testing-images/contact-mail.png" >
+  </p>
+  
   #### Footer - PASS
 
   - Footer is present on all pages.
