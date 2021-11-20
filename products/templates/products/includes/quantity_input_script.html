@@ -8,6 +8,15 @@
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
+    
+    // Restrict user from manually adding more than 99 products
+    let inputs = document.querySelectorAll('input[type="number"]')
+        inputs.forEach(input => input.addEventListener('change', event => {
+        if (event.target.value > 99) {
+            event.target.value = 99
+        }
+    }))
+
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
