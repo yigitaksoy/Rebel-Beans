@@ -20,7 +20,7 @@ Rebel Beans Coffee Company
 
 ## Overview
 
-Rebel Beans is a Amsterdam based Coffee Brewing Company with sustainability in mind. Rebel Beans products ranges from coffee beans to their signature product "Rebel Beans Cold Brew", and they are actively recycling coffee waste in the Netherlands for agricultural use. The website's main focus is to promote their products, raise brand awareness, and inform people about the benefits of recycling, and reducing coffee waste. 
+This is the main website for Rebel Beans, an Amsterdam based Coffee Brewing Company with sustainability in mind. Rebel Beans products ranges from coffee beans to their signature product "Rebel Beans Cold Brew", and they are actively recycling coffee waste in the Netherlands for agricultural use. The website's main focus is to promote their products, raise brand awareness, and inform people about the benefits of recycling, and reducing coffee waste. 
 
 The website is fully interactive, built with mobile-first design in mind, and accessible on a wide range of mobile devices, and tablets.
 
@@ -361,7 +361,7 @@ The process of cloning is now completed. For further information on cloning,
 - Choose a name for your application, select the region closest to your, and then click `Create app`.
 - After you created your app click on Resources tab, using the `Add ons ` search field find, and select `Heroku Postgres `.
 - Select your plan and click confirm.
-- In order to use Heroku Postgres we need to install two dependencies `dj_database_url` and `psycopg2-binary`
+- In order to use Heroku Postgres you need to install two dependencies `dj_database_url` and `psycopg2-binary`
 ```console
     pip3 install dj_database_url
     pip3 install psycopg2-binary
@@ -569,7 +569,7 @@ The process of cloning is now completed. For further information on cloning,
 - Image for the homepage was taken from [Unsplash](https://unsplash.com/).
 
 ### Codes
-- All the code that was used to build the home, bag, checkout, products, profile apps, as well as setting up Stripe Payments, and parts of the CSS has been taken from the Boutique Ado Walkthrough Project by the Code Institute, with minor modifications.
+- All the code that was used to build the home, bag, checkout, products, profile apps, templates, as well as setting up Stripe Payments, and parts of the CSS has been taken from the Boutique Ado Walkthrough Project by the Code Institute, with minor modifications.
 - Code for creating the [Blog application](https://djangocentral.com/building-a-blog-application-with-django/), [Comments](https://djangocentral.com/creating-comments-system-with-django/), and [Pagination](https://djangocentral.com/adding-pagination-with-django/) has been taken from the [Django Central](https://djangocentral.com/).
 - Code for setting up Custom Error Handling is from [Django Central](https://docs.djangoproject.com/en/3.2/topics/http/views/) and [Medium](https://medium.com/@yildirimabdrhm/python-django-handling-custom-error-page-807087352bea). 
 - Code for creating the contact app has been taken from [Ordinary Coders](https://www.ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend) with minor modifications.
