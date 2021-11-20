@@ -56,17 +56,17 @@
             <div class="row">
                 <div class="col-12 justify-content-center pagination">
                     {% if posts.has_other_pages %}
-                    <nav class="page-nav bg-transparent" aria-label="Page navigation conatiner">
+                    <nav class="page-nav bg-transparent py-3" aria-label="Page navigation conatiner">
                         <ul class="pagination justify-content-center">
                             {% if posts.has_previous %}
                                 <li>
-                                    <a href="?page={{ posts.previous_page_number }}" class="page-link btn-secondary">
+                                    <a href="?page={{ posts.previous_page_number }}" class="btn page-link btn-secondary" style="font-size: 1.25rem!important;">
                                         &laquo; Previous Page
                                     </a>
                                 </li>
                                 {% endif %} {% if posts.has_next %}
                                 <li>
-                                    <a href="?page={{ posts.next_page_number }}" class="page-link btn-secondary">
+                                    <a href="?page={{ posts.next_page_number }}" class="btn page-link btn-secondary" style="font-size: 1.25rem!important;">
                                         Next page &raquo;
                                     </a>
                                 </li>
