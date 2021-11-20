@@ -575,6 +575,7 @@ The process of cloning is now completed. For further information on cloning,
 - Code for creating the contact app has been taken from [Ordinary Coders](https://www.ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend) with minor modifications.
 - Code for the Blog and Blog Post templates and styles were taken from my [Wonderdam Milestone Project](https://github.com/yigitaksoy/Wonderdam).
 - Code for the Responsove Bootstrap Navigation was taken from [Codepen](https://codepen.io/ig_design/pen/omQXoQ).
+- Code for the project footer was taken from [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/).
 
 
 ## Acknowledgements
