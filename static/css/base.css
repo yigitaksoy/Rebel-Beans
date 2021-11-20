@@ -132,6 +132,12 @@ a.category-badge > span.badge:hover {
     }
 }
 
+@media (max-width: 320px) {
+    
+    .btn-outline-black {
+        font-size: .7rem!important;
+    }
+}
 /* from Bulma */
 .icon {
 	align-items: center;
