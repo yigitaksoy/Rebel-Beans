@@ -579,7 +579,9 @@ The process of cloning is now completed. For further information on cloning,
 
 
 ## Acknowledgements
-
+- I would like to thank my family, and friends who gave me endless support throughout this journey. 
+- I would like to thank my mentor Nishant Kumar for his valuable input, and guidance throughout this course.
+- I also would like to thank the Code Institute, and their team, as well as the Slack community for making all this possible.
 
 ## Disclaimer
 - All content on the website, including images and text, are used for educational purposes only.
