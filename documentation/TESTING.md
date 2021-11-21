@@ -249,7 +249,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
 
   - Form inputs work as expected and stores the data in the database, and registers user.
   - Form validations work as expected, and gives feedback upon unmatched format, invalid data, or for existing user.
-  - Submit button works as expected and submits data successfully, and send verification e-mail for users.
+  - Submit button works as expected and submits data successfully, and sends verification e-mail for users.
 
   #### Login - PASS
 
@@ -285,13 +285,14 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   #### Product Management Add/Edit - PASS
 
   - Page works as expected and renders product management form.
+  - Page is restricted for Admin use only. 
   - Form successfully Adds new product to specified category, along with its data, and images.
   - Form successfully Edits specified product, along with its data, and images.
   - Submit button works as expected and submits data.
   #### Bag - PASS
 
   - Page works as expected, and renders all the items in the bag with their details.
-  - Remove, and Update buttons work as expected and Removes or Updates specified product, or item grind.
+  - Remove, and Update buttons work as expected and Removes or Updates specified product, or item grind. Product quantity is set to 1-99 and anything above that amount is restricted. 
   - Grand total, and delivery treshold are visible, and accurate.
   - Keep shopping button works as expected and redirects user back to Products page.
   - Secure Checkout button works as expected and directs user to the Checkout Page.
