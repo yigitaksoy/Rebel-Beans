@@ -2,17 +2,17 @@ from django.shortcuts import render, get_object_or_404
 from .models import Post
 from .forms import CommentForm
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-
+from profiles.models import UserProfile
 
 def posts(request):
-    """ 
+    """
     A view for the blog page
         Args:
             request
         Returns:
-            renders blog page template   
+            renders blog page template
     """
-    
+
     posts = Post.objects.filter(status=1).order_by('-created_on')
     paginator = Paginator(posts, 4)  # Maximum 4 posts on each page
     page = request.GET.get('page')
@@ -34,7 +34,7 @@ def posts(request):
 
 
 def post_detail(request, slug):
-    """ 
+    """
     A view for each blog post, and allows
     users to add comments.
     """
@@ -54,7 +54,15 @@ def post_detail(request, slug):
             # Save the comment to the database
             new_comment.save()
     else:
-        comment_form = CommentForm()
+        # Pre-fill user data
+        if request.user.is_authenticated:
+            profile = UserProfile.objects.get(user=request.user)
+            comment_form = CommentForm(initial={
+                'email': profile.user.email,
+                'name': profile.user.username
+                })
+        else:
+            comment_form = CommentForm()
 
     return render(request, template_name, {'post': post,
                                            'comments': comments,
