@@ -576,6 +576,7 @@ The process of cloning is now completed. For further information on cloning,
 - Code for the Blog and Blog Post templates and styles were taken from my [Wonderdam Milestone Project](https://github.com/yigitaksoy/Wonderdam).
 - Code for the Responsove Bootstrap Navigation was taken from [Codepen](https://codepen.io/ig_design/pen/omQXoQ).
 - Code for the project footer was taken from [MDBootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/).
+- Code for Restricting users to manually updating product quantity was from Code Institute Tutor Sean.
 
 
 ## Acknowledgements
