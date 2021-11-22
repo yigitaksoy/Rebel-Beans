@@ -334,6 +334,7 @@ Please refer to seperate [README.md](https://github.com/yigitaksoy/Rebel-Beans/b
   - Comment section works as expected and shows all the current comments, with a comment counter. If there are no comments on the post, a message is shown to the user if they would like to add one.
   - Comment form works as expected and submits user comment data, forwards it to Admin for moderation before posting.
   - Comment success alert message works as expected.
+  - Comment form successfully auto-fills registered user data.
 
   #### About - PASS
 
