@@ -225,6 +225,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 
 ### Features Left to Implement
 
+- Functionality for users to Edit/Delete their Blog Post Comments.
 - Newsletter app allowing customers to be notified when new products are addded to the website.
 - Order tracking system for customers to track their order from the website.
 - Discount coupons for customers to use during sale, or holiday seasons.
