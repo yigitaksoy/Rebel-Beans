@@ -206,8 +206,7 @@ The website is fully interactive, built with mobile-first design in mind, and ac
 - Features a clean layout, and responsive on all device sizes.
 - Blog detail page features blog image, title, information about the author, and the date it was added.
 - Underneath the blog post a comment section is present allowing users to read the current comments on that specific post.
-- Underneath the current comments section, a comment form is present for registered users, allowing them to leave a comment on that post. 
-- Comment form is hidden for unregistered or for users who are signed-out. Instead a login, register section is present.
+- Underneath the current comments section, a comment form is present for users, allowing them to leave a comment on that post. 
 - Each comment is moderated by the Admin before they approved, allowing Admin user to filter spamming or inappropriate content.
 
 **Contact Page**
