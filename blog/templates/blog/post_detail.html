@@ -69,33 +69,22 @@
             				    {% endfor %}
             				<!-- Add New Comment Section -->
             				{% if new_comment %}
-            				<div class="alert alert-success text-center" style="font-family: cortado, sans-serif; font-size:1.8rem" role="alert">
-            					Your comment is awaiting moderation
-            				</div>
+            				    <div class="alert alert-success text-center" style="font-family: cortado, sans-serif; font-size:1.8rem" role="alert">
+            				    	Your comment is awaiting moderation
+            				    </div>
             				{% else %}
-                                {% if request.user.is_authenticated %}
-            				        <h4 class="text-center pt-5">Leave a comment</h4>
-            				        <div class="comments pt-5" style="padding: 10px">
-                                    <!-- Comment Form -->
-            					    <form method="post">
-                                        {% csrf_token %}
-                                        {% for field in comment_form %}
-                                            {{ field | as_crispy_field }}
-                                        {% endfor %}
-            					    	<button type="submit" style="font-size: 1.1rem!important"class="btn btn-secondary">
-                                            Submit Comment
-                                        </button>
-            					    </form>
-                                    {% else %}
-                                    <!-- Login or Register Section -->
-                                    <div class="text-center"> 
-                                        <p style="border-bottom: 5px solid var(--bg-purple);">Please 
-                                            <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_login' %}">Login, </a>
-                                            or <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_signup' %}"> Register</a> 
-                                            to leave a comment.
-                                        </p>
-                                    </div>
-                                {% endif%}
+            			        <h4 class="text-center pt-5">Leave a comment</h4>
+            			        <div class="comments pt-5" style="padding: 10px">
+                                <!-- Comment Form -->
+            			        <form method="post">
+                                    {% csrf_token %}
+                                    {% for field in comment_form %}
+                                        {{ field | as_crispy_field }}
+                                    {% endfor %}
+            			        	<button type="submit" style="font-size: 1.1rem!important"class="btn btn-secondary">
+                                        Submit Comment
+                                    </button>
+            			        </form>
             				{% endif %}
             				    </div>
             			    </div>
