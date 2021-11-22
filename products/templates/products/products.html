@@ -10,9 +10,11 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Products -->
     <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
+            <!-- Category Badges -->
             <div class="col text-center mt-3">
                 <h2>Products</h2>
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}">
@@ -30,6 +32,7 @@
         <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
+                    <!-- Sort Products -->
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
@@ -52,10 +55,12 @@
                         </p>
                     </div>
                 </div>
+                <!-- Products -->
                 <div class="row mb-5">
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-0 shadow">
+                                <!-- Product Image -->
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
                                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -65,6 +70,7 @@
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
+                                <!-- Product Details -->
                                 <div class="card-body pb-0">
                                     <p class="mb-0">{{ product.name }}</p>
                                 </div>

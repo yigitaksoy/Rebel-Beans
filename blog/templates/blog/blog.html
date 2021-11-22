@@ -19,6 +19,7 @@
         <div class="container my-5">
             <div class="row">
                 <div class="post col-lg-6 col-md-12">
+                    <!-- Post image -->
                    <div class="post-img">
                         {% if post.image %}
                             <a href="{% url 'post_detail' post.slug %}">
@@ -39,10 +40,13 @@
                            <span><i class="fas fa-calendar-alt"></i> {{ post.created_on }}</span>
                            <span><i class="fas fa-comment"></i> {{ post.comments.count }}</span>
                         </p>
+                        <!-- Title -->
                         <a class="text-reset" href="{% url 'post_detail' post.slug %}">
                             <h2>{{ post.title }}</h2>
                         </a>
+                        <!-- Blog Preview -->
                         <p class="intro">{{ post.content|truncatechars:180 }}</p>
+                        <!-- Read Post Button --> 
                         <div class="py-5">
                            <a href="{% url 'post_detail' post.slug %}" class="read">Read Post</a>
                         </div> 
@@ -51,10 +55,11 @@
             </div>
         </div>
         {% endfor %}
-        <!-- Blog Pagination -->
+        <!-- Blog Pagination - Code Credit: https://djangocentral.com/adding-pagination-with-django/ -->
         <div class="container">
             <div class="row">
                 <div class="col-12 justify-content-center pagination">
+                    <!-- Pagination Buttons -->
                     {% if posts.has_other_pages %}
                     <nav class="page-nav bg-transparent py-3" aria-label="Page navigation conatiner">
                         <ul class="pagination justify-content-center">

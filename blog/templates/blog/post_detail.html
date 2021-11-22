@@ -42,12 +42,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Blog Comments -->
+            <!-- Blog Comments - Code Credit: https://djangocentral.com/creating-comments-system-with-django/ -->
             <div class="container">
             	<div class="row">
             		<div class="col col-md-8 offset-md-2 mt-3">
                         <div class="card">
             			    <div class="card-body">
+                                <!-- Comment Counter -->
                                 {% if comments.count > 0 %}
             				        <h2>{{ comments.count }} comments</h2>
                                 {% else %}
@@ -75,6 +76,7 @@
                                 {% if request.user.is_authenticated %}
             				        <h4 class="text-center pt-5">Leave a comment</h4>
             				        <div class="comments pt-5" style="padding: 10px">
+                                    <!-- Comment Form -->
             					    <form method="post">
                                         {% csrf_token %}
                                         {% for field in comment_form %}
@@ -85,10 +87,13 @@
                                         </button>
             					    </form>
                                     {% else %}
-                                    <div class="text-center">
-                                       
-                                        <p style="border-bottom: 5px solid var(--bg-purple);">Please <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_login' %}">Login, </a>
-                                            or <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_signup' %}"> Register</a> to leave a comment.</p>
+                                    <!-- Login or Register Section -->
+                                    <div class="text-center"> 
+                                        <p style="border-bottom: 5px solid var(--bg-purple);">Please 
+                                            <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_login' %}">Login, </a>
+                                            or <a style="text-decoration: none; font-weight: 900;" href="{% url 'account_signup' %}"> Register</a> 
+                                            to leave a comment.
+                                        </p>
                                     </div>
                                 {% endif%}
             				{% endif %}

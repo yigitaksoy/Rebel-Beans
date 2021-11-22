@@ -1,4 +1,6 @@
+<!-- Mobile Top Header -->
 <div class="list-inline-item custom-bg">
+    <!-- Search Bar -->
     <a class="nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
@@ -20,6 +22,7 @@
         </form>
     </div>
 </div>
+<!-- My Account  -->
 <div class="list-inline-item dropdown custom-bg">
     <a class="nav-link d-block d-lg-none" href="{% url 'profile' %}" id="my-account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
@@ -27,6 +30,7 @@
             <p class="my-0">My Account</p>
         </div>
     </a>
+    <!-- My Account links -->
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -40,6 +44,7 @@
         {% endif %}
     </div>
 </div>
+<!-- Bag -->
 <div class="list-inline-item">
     <a class="{% if grand_total %} cart-item font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
         <div class="text-center">

@@ -15,6 +15,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Checkout -->
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
@@ -24,7 +25,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Order Summary -->
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -36,8 +37,10 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
+                <!-- Bag Items -->
                 {% for item in bag_items %}
                     <div class="row">
+                        <!-- Product Image -->
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
@@ -47,6 +50,7 @@
                                 {% endif %}
                             </a>
                         </div>
+                        <!-- Product Details -->
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small">Grind: {% if item.product.grind %}{{ item.grind|upper }}{% else %}N/A{% endif %}</p>
@@ -58,6 +62,7 @@
                     </div>
                 {% endfor %}
                 <hr class="my-0">
+                <!-- Bag Total -->
                 <div class="row text-black text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
@@ -71,6 +76,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Checkout form -->
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -103,14 +109,14 @@
                     </fieldset>
                     <fieldset class="px-3">
                         <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element will go here -->
+                        <!-- Stripe Card Element -->
                         <div class="mb-3" id="card-element"></div>
-                        <!-- Used to display form errors -->
+                        <!-- Error Messages -->
                         <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                         <!-- Pass the client secret to the view so we can get the payment intent id -->
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                     </fieldset>
-
+                    <!-- Adjust Bag & Checkout Buttons -->
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">
@@ -135,6 +141,7 @@
             </div>
         </div>
     </div>
+    <!-- Payment Processing Spinner -->
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">
